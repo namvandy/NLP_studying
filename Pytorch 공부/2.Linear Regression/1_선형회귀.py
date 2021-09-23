@@ -62,3 +62,17 @@ optimizer.zero_grad()
 cost.backward() # 가중치 w와 편향 b에 대한 기울기가 계산이 됨
 # w와 b를 업데이트
 optimizer.step() # w와 b에서 리턴되는 변수들의 기울기에 lr=0.01을 곱하여 뺴줌으로 업데이트
+
+# -------------------------
+
+# optimizer.zero_grad()가 필요한 이유
+# pytorch는 미분을 통해 얻은 기울기를 이전에 계산된 기울기 값에 누적시키는 특징이 있음
+
+i = torch.tensor(2.0, requires_grad=True)
+epochs = 20
+for epoch in range(epochs+1):
+    z = 2 * i
+    z.backward()
+    print('수식을 i로 미분한 값: {}'.format(i.grad))
+# 계속해서 미분값인 2가 누적됨.
+# 그렇기 때문에 optimizer.zero_grad()로 미분값을 계속 0으로 초기화시켜주어야 함.
