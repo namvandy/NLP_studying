@@ -1,2 +1,9 @@
 /venv/
 /Pytorch 공부/6.Convolutional Neural Network/MNIST_data/
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/.data/
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/.vector_cache/
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/wikiextractor/
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/eng_w2v
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/eng_w2v_metadata.tsv
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/eng_w2v_tensor.tsv
+/Pytorch 공부/8.How to express words(단어의 표현 방법)/ted_en-20160408.xml
